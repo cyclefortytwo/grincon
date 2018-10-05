@@ -1,0 +1,27 @@
+{
+  "name": "grincon",
+  "version": "1.0.0",
+  "description": "grincon",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp serve"
+  },
+  "author": "ivan@sorokin.io",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-inject": "^4.1.0",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-surge": "^0.1.0",
+    "node-sass": "^4.9.0"
+  },
+  "dependencies": {
+    "node.normalize.scss": "^3.0.3"
+  }
+}

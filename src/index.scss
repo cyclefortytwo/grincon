@@ -1,0 +1,162 @@
+@import 'node_modules/node.normalize.scss/normalize';
+
+$phone-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+$large-desktop-width: 1200px;
+
+@mixin small-phone {
+  @media (max-width: #{$phone-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) and (max-width: #{$large-desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width: #{$large-desktop-width}) {
+    @content;
+  }
+}
+
+* {
+  font-family: Arial;
+}
+
+html {
+  min-height: 100vh;
+  display: flex;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  color: #444;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: $phone-width;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  &#topics {
+    .content {
+      padding: 1rem 0;
+      line-height: 1.5rem;
+      ul {
+        margin: 0;
+        font-family: monospace;
+        background: #fff;
+        padding: 0;
+        li {
+          margin-left: 1rem;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          list-style-type: square;
+        }
+      }
+    }
+  }
+
+  &#links {
+    padding: 1rem 0;
+    ul {
+      margin: 0;
+      font-family: monospace;
+      background: #fff;
+      padding: 0;
+      li {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        list-style-type: none;
+      }
+    }
+  }
+
+  &#header {
+    margin-top: 1rem;
+  }
+
+  .header {
+    font-family: monospace;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+  .content {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+}
