@@ -84,6 +84,7 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: $phone-width;
+  width: 100%;
 }
 
 footer {
@@ -110,6 +111,18 @@ section {
   display: flex;
   flex-direction: column;
   &#topics {
+    .register {
+      display: flex;
+      justify-content: center;
+
+      a {
+        background: #f64060;
+        border-radius: 5px;
+        color: white;
+        padding: 5px 15px;
+        border: none;
+      }
+    }
     .content {
       padding: 1rem 0;
       line-height: 1.5rem;
@@ -128,21 +141,6 @@ section {
     }
   }
 
-  &#links {
-    padding: 1rem 0;
-    ul {
-      margin: 0;
-      font-family: monospace;
-      background: #fff;
-      padding: 0;
-      li {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        list-style-type: none;
-      }
-    }
-  }
-
   &#header {
     margin-top: 1rem;
   }
@@ -157,6 +155,6 @@ section {
   }
   .content {
     background: #fff;
-    border-bottom: 1px solid #ddd;
+    // border-bottom: 1px solid #ddd;
   }
 }
