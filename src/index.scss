@@ -110,39 +110,41 @@ main {
 section {
   display: flex;
   flex-direction: column;
-    .register {
-      display: flex;
-      justify-content: center;
+  .register {
+    display: flex;
+    justify-content: center;
+    height: 30px;
 
-      a {
-        background: #f64060;
-        border-radius: 5px;
-        color: white;
-        padding: 5px 15px;
-        border: none;
-      }
+    a {
+      background: #f64060;
+      border-radius: 5px;
+      color: white;
+      padding: 5px 15px;
+      border: none;
     }
-    .content {
-      padding: 1rem 0;
-      line-height: 1.5rem;
-      ul {
-        margin: 0;
-        font-family: monospace;
-        background: #fff;
-        padding: 0;
-        li {
-          margin-left: 1rem;
-          font-size: 1rem;
-          line-height: 1.5rem;
-          list-style-type: square;
-        }
-      }
-    }
-  &#topics {
-	margin-bottom: 2rem;
   }
+  .content {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+    ul {
+      margin: 0;
+      font-family: monospace;
+      background: #fff;
+      padding: 0;
+      li {
+        margin-left: 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        list-style-type: square;
+      }
+    }
+  }
+
+  margin-bottom: 1rem;
   &#header {
+    flex-direction: row;
     margin-top: 1rem;
+    align-items: center;
   }
 
   .header {
