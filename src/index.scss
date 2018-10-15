@@ -110,7 +110,6 @@ main {
 section {
   display: flex;
   flex-direction: column;
-  &#topics {
     .register {
       display: flex;
       justify-content: center;
@@ -139,8 +138,9 @@ section {
         }
       }
     }
+  &#topics {
+	margin-bottom: 2rem;
   }
-
   &#header {
     margin-top: 1rem;
   }
