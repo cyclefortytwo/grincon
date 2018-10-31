@@ -66,6 +66,10 @@ h1 {
   font-size: 2rem;
 }
 
+h3 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
 h5 {
   font-size: 1.25rem;
   color: #444;
@@ -108,6 +112,20 @@ main {
 }
 
 section {
+  table#program {
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid #ddd;
+      td {
+        &:first-child {
+          min-width: 110px;
+        }
+        text-align: left;
+        padding: 0.25rem 0;
+      }
+    }
+  }
   display: flex;
   flex-direction: column;
   .register {
@@ -124,8 +142,14 @@ section {
     }
   }
   .content {
+    p {
+      margin: 0;
+    }
     padding: 1rem 0;
     line-height: 1.5rem;
+    ol {
+      padding-left: 1rem;
+    }
     ul {
       margin: 0;
       font-family: monospace;
